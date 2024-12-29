@@ -1,0 +1,153 @@
+/* Change default font for page */
+html {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.4em;
+  color: #747474;
+}
+
+/* clear margin and padding and set default bg color */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 54%, 90%);
+}
+
+.main-container {
+  max-width: 640px;
+  padding: 44px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 15% auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+h1 {
+  font-family: Young Serif, serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  color: black;
+  margin-top: 45px;
+}
+
+h2 {
+  font-family: Young Serif, serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: Outfit, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4em;
+  color: hsl(332, 51%, 32%);
+  margin: 0px;
+}
+
+#body-text-bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pullout {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 15px;
+  max-width: 100%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding: 25px 30px 25px 30px;  
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul li, ol li {
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.hr-1 {
+  border-top: 1px solid #f2f2f2;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#table-special {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+
+td {
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width:640px) {
+  /* For mobile phones and smaller screens: */
+  .main-container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 43px;
+  border-radius: 0px;
+  margin-top: 0px;
+  }
+  .top-image-wrapper {
+    margin: -44px -44px 30px -44px;
+  }
+  .image {
+    width: 100%;
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any inline spacing */
+    border-radius: 0px;
+  } 
+}
